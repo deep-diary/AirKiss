@@ -1,5 +1,5 @@
 .PHONY:clean
-OBJECTS= promisc.o
+OBJECTS= promisc.o libairkiss_log.a
 promisc_main:$(OBJECTS)
 	mips-openwrt-linux-gcc -Wall -g $^ -o $@ 
 promisc.o:promisc.c
